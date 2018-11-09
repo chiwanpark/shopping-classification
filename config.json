@@ -5,7 +5,7 @@
     "max_len": 32,
     "db_chunk_size": 100000,
     "num_workers": 10,
-    "num_preidct_workers": 2,
+    "num_predict_workers": 2,
     "embd_size": 128,
     "lr": 1e-4,
     "num_epochs": 100,
