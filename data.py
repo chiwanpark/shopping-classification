@@ -144,7 +144,7 @@ class Data:
         try:
             rets = pool.map_async(build_y_vocab,
                                   [(data_path, 'train')
-                                   for data_path in TRAIN_DATA_LIST]).get(99999999999)
+                                   for data_path in TRAIN_DATA_LIST]).get(9999999)
             pool.close()
             pool.join()
             y_vocab = set()
@@ -194,7 +194,7 @@ class Data:
                                             self.tmp_chunk_tpl % cidx,
                                             begin,
                                             end)
-                                           for cidx, (begin, end) in enumerate(chunk_offsets)]).get(99999999999)
+                                           for cidx, (begin, end) in enumerate(chunk_offsets)]).get(9999999)
             pool.close()
             pool.join()
         except KeyboardInterrupt:
